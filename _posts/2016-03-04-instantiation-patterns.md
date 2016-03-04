@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  "A Field Guide to Instantiation patterns"
-date:   2016-03-03 11:02:00 -0500
+date:   2016-04-04 11:02:00 -0500
 categories: JavaScript
 ---
 
-One of the biggest obstacles in learning about prototype chains in JavaScript is keeping track of all the ways you can make them.  This is by no means a complete explanation of the many forms and features of these functions, simply a quick visual reference and field guide to identifying them in the wild.
+One of the biggest obstacles in learning about object constructors in JavaScript is keeping track of all the ways you can make them.  This is by no means a complete explanation of the many forms and features of these functions, simply a quick visual reference and field guide to identifying them in the wild.
 
 ![A graphical representation of some instantiation patterns](https://raw.githubusercontent.com/fswiecki/fswiecki.github.io/master/_images/instantiation-patterns.png){: .center-img}
 
