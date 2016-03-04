@@ -15,4 +15,13 @@ There are four instantiation patterns in JavaScript: __functional, functional-sh
 the functional pattern, all properties and methods will be set within the constructor function. References to external objects are not necessary.  The keyword `this` is not needed to ensure that methods will apply to the instance being created and you are unlikely to encounter it.
 
 ## Functional-shared
-Like the functional pattern, the functional-shared pattern constructor begins by creating an object instance and returns the instance at the end. However, only the properties are present within the 
+Like the functional pattern, the functional-shared pattern constructor begins by creating an object instance and returns the instance at the end. However, only the properties are present within the constructor function, and they are assigned directly to the object instance:
+```
+var catMaker = function(name, color){
+  var anotherCat = {};
+  anotherCat.name = name;
+  anotherCat.color = color;
+...
+  ```
+  Methods are stored externally on another object, and instead some sort of `extend` function is used to copy them to the instance in the constructor function before the object instance is returned.
+  
