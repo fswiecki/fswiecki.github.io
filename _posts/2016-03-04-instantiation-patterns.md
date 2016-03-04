@@ -15,11 +15,9 @@ There are four instantiation patterns in JavaScript: __functional, functional-sh
 ![A graphical representation of functional instantiation](https://raw.githubusercontent.com/fswiecki/fswiecki.github.io/master/_images/functional.png)
 
 __Key Identifiers__
-* function begins by creating an object and ends by returning that object
-* 
-* all methods are stored within the constructor function
-* 
-* use pattern: `var cat1 = catMaker("Princess", "white");`
+* function begins by creating an object and ends by returning that object 
+* all methods are stored within the constructor function 
+* use pattern: `var cat1 = catMaker("Princess", "white");` 
 
 The functional pattern constructor begins by creating an object instance and ends by returning that instance.  In the functional pattern, all properties and methods will be set within the constructor function. References to external objects are not necessary.  The keyword `this` is not needed to ensure that methods will apply to the instance being created.
 
