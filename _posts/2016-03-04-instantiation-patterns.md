@@ -35,7 +35,6 @@ var catMaker = function(name, color){
 ```
 
 ### Functional-shared
-|---|---|
 |![A graphical representation of functional-shared instantiation](https://raw.githubusercontent.com/fswiecki/fswiecki.github.io/master/_images/functional-shared-prototypal.png)| __Key Identifiers__
 - function begins by creating an object and ends by returning that object
 - all methods are stored outside of the constructor function
