@@ -13,6 +13,7 @@ There are four instantiation patterns in JavaScript: __functional, functional-sh
 
 ### Functional
 ![A graphical representation of functional instantiation](https://raw.githubusercontent.com/fswiecki/fswiecki.github.io/master/_images/functional.png)
+
 __Key Identifiers__
 - function begins by creating an object and ends by returning that object
 - all methods are stored within the constructor function
@@ -35,12 +36,14 @@ var catMaker = function(name, color){
 ```
 
 ### Functional-shared
-|![A graphical representation of functional-shared instantiation](https://raw.githubusercontent.com/fswiecki/fswiecki.github.io/master/_images/functional-shared-prototypal.png)| __Key Identifiers__
+![A graphical representation of functional-shared instantiation](https://raw.githubusercontent.com/fswiecki/fswiecki.github.io/master/_images/functional-shared-prototypal.png) 
+
+__Key Identifiers__
 - function begins by creating an object and ends by returning that object
 - all methods are stored outside of the constructor function
 - an `extend` function is used to give the newly created object access to the appropriate methods.
 - the keyword `this` is used in methods to refer to the appropriate object
-- use pattern: `var cat2 = catMaker("Tiger", "orange")`|
+- use pattern: `var cat2 = catMaker("Tiger", "orange")`
 
 Like the functional pattern, the functional-shared pattern constructor begins by creating an object instance and returns the instance at the end. However, only the properties are present within the constructor function, and they are assigned directly to the object instance:
 ```javascript
@@ -70,6 +73,7 @@ catMethods.sayHi = function(){
   
 ### Prototypal
 ![A graphical representation of prototypal instantiation](https://raw.githubusercontent.com/fswiecki/fswiecki.github.io/master/_images/functional-shared-prototypal.png) 
+
 __Key Identifiers__
 - function begins by creating an object and ends by returning that object
 - all methods are stored outside of the constructor function
@@ -93,6 +97,7 @@ var catMaker = function(name, color){
 
 ### Pseudoclassical
 ![A graphical representation of pseudoclassical instantiation](https://raw.githubusercontent.com/fswiecki/fswiecki.github.io/master/_images/pseudoclassical.png) 
+
 __Key Identifiers__
 - properties declared with `this`
 - no return statement inside constructor function
