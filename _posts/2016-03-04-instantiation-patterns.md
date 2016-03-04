@@ -15,11 +15,12 @@ There are four instantiation patterns in JavaScript: __functional, functional-sh
 ![A graphical representation of functional instantiation](https://raw.githubusercontent.com/fswiecki/fswiecki.github.io/master/_images/functional.png)
 
 __Key Identifiers__
-- function begins by creating an object and ends by returning that object
-- all methods are stored within the constructor function
-- use pattern: `var cat1 = catMaker("Princess", "white");`
+* function begins by creating an object and ends by returning that object
+* all methods are stored within the constructor function
+* use pattern: `var cat1 = catMaker("Princess", "white");`
 
 The functional pattern constructor begins by creating an object instance and ends by returning that instance.  In the functional pattern, all properties and methods will be set within the constructor function. References to external objects are not necessary.  The keyword `this` is not needed to ensure that methods will apply to the instance being created.
+
 ```javascript
 var catMaker = function(name, color){
   var anotherCat = {};
@@ -52,9 +53,9 @@ var catMaker = function(name, color){
   anotherCat.name = name;
   anotherCat.color = color;
 ...
-  ```
-  Methods are stored on another object, either externally (i.e. `catMethods`) or on a property of the instantiation function (i.e. `catMaker.catMethods`) , and instead some sort of `extend` function is used to copy them to the instance in the constructor function before the object instance is returned.
-  ```javascript
+```
+Methods are stored on another object, either externally (i.e. `catMethods`) or on a property of the instantiation function (i.e. `catMaker.catMethods`) , and instead some sort of `extend` function is used to copy them to the instance in the constructor function before the object instance is returned.
+```javascript
   ...
     extend(anotherCat, catMethods);
     return anotherCat;
@@ -110,9 +111,9 @@ var catMaker = function(name, color){
   this.name = name;
   this.color = color;
 };
-  ```
+```
   Methods for pseudoclassical constructors *must* be stored on the `.prototype` property of the constructor in order to be found.
-  ```javascript
+```javascript
 catMaker.prototype.meows = function(){
   console.log(this.name + " meows.");
 };
