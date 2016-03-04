@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A Field Guide to Instantiation patterns"
-date:   2016-03-04 11:00:00 -0500
+date:   2016-03-04 10:00:00 -0500
 categories: JavaScript
 ---
 
