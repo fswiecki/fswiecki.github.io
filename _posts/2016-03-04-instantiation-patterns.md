@@ -16,9 +16,10 @@ There are four instantiation patterns in JavaScript: __functional, functional-sh
 
 __Key Identifiers__
 
-  * function begins by creating an object and ends by returning that object 
-  * all methods are stored within the constructor function 
-  * use pattern: `var cat1 = catMaker("Princess", "white");` 
+  - function begins by creating an object and ends by returning that object 
+  - all methods are stored within the constructor function 
+  - use pattern: `var cat1 = catMaker("Princess", "white");` 
+
 
 The functional pattern constructor begins by creating an object instance and ends by returning that instance.  In the functional pattern, all properties and methods will be set within the constructor function. References to external objects are not necessary.  The keyword `this` is not needed to ensure that methods will apply to the instance being created.
 
@@ -48,6 +49,7 @@ __Key Identifiers__
   - the keyword `this` is used in methods to refer to the appropriate object
   - use pattern: `var cat2 = catMaker("Tiger", "orange")`
 
+
 Like the functional pattern, the functional-shared pattern constructor begins by creating an object instance and returns the instance at the end. However, only the properties are present within the constructor function, and they are assigned directly to the object instance:
 
 ```javascript
@@ -61,9 +63,9 @@ var catMaker = function(name, color){
 Methods are stored on another object, either externally (i.e. `catMethods`) or on a property of the instantiation function (i.e. `catMaker.catMethods`) , and instead some sort of `extend` function is used to copy them to the instance in the constructor function before the object instance is returned.
 
 ```javascript
-  ...
-    extend(anotherCat, catMethods);
-    return anotherCat;
+...
+  extend(anotherCat, catMethods);
+  return anotherCat;
 }
 ```
 
@@ -117,6 +119,7 @@ __Key Identifiers__
   - no return statement inside constructor function
   - methods stored on the `.prototype` property
   - usage pattern: `var cat4 = new catMaker("Mittens", "tabby");`
+
 
 The first thing you will probably notice about a pseudoclassical constructor function is that it's a few lines of code shorter.  Because pseudoclassical instantiation relies on the `new` keyword, it is unnecessary to write out the creation of a new object instance inside the constructor function -- JavaScript will take care of that for us.  Since there is no longer a named variable for the instance being worked on, the keyword `this` will need to be employed for property creation.
 
