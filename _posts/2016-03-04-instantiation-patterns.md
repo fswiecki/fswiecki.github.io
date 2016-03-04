@@ -20,7 +20,7 @@ __Key Identifiers__
   - all methods are stored within the constructor function 
   - use pattern: `var cat1 = catMaker("Princess", "white");` 
 
----{: clear}
+<hr class="clear">
 
 The functional pattern constructor begins by creating an object instance and ends by returning that instance.  In the functional pattern, all properties and methods will be set within the constructor function. References to external objects are not necessary.  The keyword `this` is not needed to ensure that methods will apply to the instance being created.
 
@@ -50,7 +50,7 @@ __Key Identifiers__
   - the keyword `this` is used in methods to refer to the appropriate object
   - use pattern: `var cat2 = catMaker("Tiger", "orange")`
 
----{: clear}
+<hr class="clear">
 
 Like the functional pattern, the functional-shared pattern constructor begins by creating an object instance and returns the instance at the end. However, only the properties are present within the constructor function, and they are assigned directly to the object instance:
 
@@ -94,7 +94,7 @@ __Key Identifiers__
   - the keyword `this` is used in methods to refer to the appropriate object
   - use pattern: `var cat3 = catMaker("Fluffy", "grey");`
       
----{: clear}
+<hr class="clear">
 
 On the surface, prototypal instantiation looks very similar to functional-shared instantiation. All the important pieces are organized in the same way, but `Object.create()` is used to create a prototypal lookup for the methods instead of just extending the object instance to contain them.
 
@@ -123,7 +123,7 @@ __Key Identifiers__
   - methods stored on the `.prototype` property
   - usage pattern: `var cat4 = new catMaker("Mittens", "tabby");`
      
----{: clear}
+<hr class="clear">
 
 The first thing you will probably notice about a pseudoclassical constructor function is that it's a few lines of code shorter.  Because pseudoclassical instantiation relies on the `new` keyword, it is unnecessary to write out the creation of a new object instance inside the constructor function -- JavaScript will take care of that for us.  Since there is no longer a named variable for the instance being worked on, the keyword `this` will need to be employed for property creation.
 
