@@ -9,7 +9,7 @@ One of the biggest obstacles in learning about object constructors in JavaScript
 
 ![A graphical representation of some instantiation patterns](https://raw.githubusercontent.com/fswiecki/fswiecki.github.io/master/_images/instantiation-patterns.png){: .center-img}
 
-There are four instantiation patterns in JavaScript: __functional, functional-shared, prototypal__, and __pseudoclassical__.  The first and last are quite distinct from each other, but the first three and the last three share enough similatirites of construction to be slightly confusing and the middle two are almost identical in appearance.  
+There are four instantiation patterns in JavaScript: __functional, functional-shared, prototypal__, and __pseudoclassical__.  The first and last are quite distinct from each other, but the first three and the last three share enough similarities of construction to be slightly confusing and the middle two are almost identical in appearance.  
 
 ### Functional
 ![A graphical representation of functional instantiation](https://raw.githubusercontent.com/fswiecki/fswiecki.github.io/master/_images/functional.png)
