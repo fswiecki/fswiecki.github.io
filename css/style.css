@@ -573,6 +573,11 @@ img {
   float: left;
   margin: 10px 15px 1px 0;
 }
+.center-img {
+  margin: 0 auto;
+  display: block;
+  float: none;
+}
 
 /* List */
 
