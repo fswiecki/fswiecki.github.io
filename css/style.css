@@ -971,6 +971,13 @@ img {
 		width: 35%;
 	}
 
+	#header.nutsAndBolts {
+		background-image: url("images/overlay.png"), url("../images/nuts-and-bolts.jpg");
+	}
+	#header.javaScript {
+		background-image: url("images/overlay.png"), url("../images/javascript-bg.jpg");
+	}
+
 		#header strong, #header b {
 			color: #ffffff;
 		}
@@ -988,7 +995,7 @@ img {
 
 		#header .image.avatar {
 			margin: 0 0 1em 0;
-			width: 6.25em;
+			width: 6.85em;
 		}
 
 /* Footer */
