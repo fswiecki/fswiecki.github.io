@@ -11,7 +11,7 @@ email: frances.swiecki@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   In which our protagonist blogs about all of the new things she is learning.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
 twitter_username: -none yet-
 github_username:  fswiecki
 
