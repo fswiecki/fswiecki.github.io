@@ -7,12 +7,12 @@ categories: JavaScript
 
 One of the biggest obstacles in learning about object constructors in JavaScript is keeping track of all the ways you can make them.  This is by no means a complete explanation of these functions, simply a quick visual reference and field guide to identifying them in the wild.
 
-![A graphical representation of some instantiation patterns](https://raw.githubusercontent.com/fswiecki/fswiecki.github.io/master/_images/instantiation-patterns.png){: .center-img}
+![A graphical representation of some instantiation patterns](/images/instantiation-patterns.png){: .center-img}
 
 There are four instantiation patterns in JavaScript: __functional, functional-shared, prototypal__, and __pseudoclassical__.  The first and last are quite distinct from each other, the first three and the last three share enough similarities of construction to be slightly confusing, and the middle two are almost identical in appearance.  
 
 ### Functional
-![A graphical representation of functional instantiation](https://raw.githubusercontent.com/fswiecki/fswiecki.github.io/master/_images/functional.png)
+![A graphical representation of functional instantiation](/images/functional.png)
 
 __Key Identifiers__
 
@@ -40,7 +40,7 @@ var catMaker = function(name, color){
 ```
 
 ### Functional-shared
-![A graphical representation of functional-shared instantiation](https://raw.githubusercontent.com/fswiecki/fswiecki.github.io/master/_images/functional-shared-prototypal.png) 
+![A graphical representation of functional-shared instantiation](/images/functional-shared-prototypal.png) 
 
 __Key Identifiers__
 
@@ -84,7 +84,7 @@ catMethods.sayHi = function(){
 ```
   
 ### Prototypal
-![A graphical representation of prototypal instantiation](https://raw.githubusercontent.com/fswiecki/fswiecki.github.io/master/_images/functional-shared-prototypal.png) 
+![A graphical representation of prototypal instantiation](/images/functional-shared-prototypal.png) 
 
 __Key Identifiers__
 
@@ -114,7 +114,7 @@ var catMaker = function(name, color){
 
 
 ### Pseudoclassical
-![A graphical representation of pseudoclassical instantiation](https://raw.githubusercontent.com/fswiecki/fswiecki.github.io/master/_images/pseudoclassical.png) 
+![A graphical representation of pseudoclassical instantiation](/images/pseudoclassical.png) 
 
 __Key Identifiers__
 
