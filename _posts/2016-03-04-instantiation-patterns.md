@@ -3,6 +3,7 @@ layout: post
 title:  "A Field Guide to Instantiation patterns"
 date:   2016-03-04 01:00:00 -0500
 categories: JavaScript
+excerpt: "One of the biggest obstacles in learning about object constructors in JavaScript is keeping track of all the ways you can make them.  This is by no means a complete explanation of these functions, simply a quick visual reference and field guide to identifying them in the wild."
 sidebar: javaScript
 ---
 
