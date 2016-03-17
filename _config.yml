@@ -12,8 +12,9 @@ description: > # this means to ignore newlines until "baseurl:"
   In which our protagonist blogs about all of the new things she is learning.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
-twitter_username: -none yet-
+# twitter_username: don't have one yet...
 github_username:  fswiecki
+linkedin_username: frances-swiecki-bernhardt-664a36111
 
 # Build settings
 markdown: kramdown
