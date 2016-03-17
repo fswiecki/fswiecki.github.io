@@ -30,7 +30,7 @@
         {{ content }}
 
         <!-- Footer -->
-        <footer id="footer">
+        <footer id="footer" class= {{page.sidebar}}>
                 {% for my_page in site.pages %}
                   {% if my_page.title %}
                   <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>

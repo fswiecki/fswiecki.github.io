@@ -71,6 +71,10 @@
 				padding-left: 0.75em;
 			}
 
+	#footer.javaScript {
+		background-image: url("images/overlay.png"), url("../images/javascript-bg.jpg");
+	}
+
 /* Main */
 
 	#main {
