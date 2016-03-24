@@ -20,7 +20,7 @@ var sendResponse = function(response, data, status) {
 };
 
 var handleRequest = function (request, response) {
-  var action = actions[request.method];
+  var action = request.method;
   if (action === 'GET') {
     sendResponse(response, data, 200)
   } else if (action === 'POST') {
@@ -32,7 +32,7 @@ var handleRequest = function (request, response) {
 
 ```
 
-... but as your codebase grows more complex and as you add more requests (like `OPTIONS` or `PUT`) your `handleRequest` function will quickly become unruly.  What can we do instead?  We can create an `actons` object that stores functions to deal with every request we might want to handle.
+... but as your codebase grows more complex and as you add more requests (like `OPTIONS` or `PUT`) your `handleRequest` function will quickly become unruly.  What can we do instead?  We can create an `actions` object that stores functions to deal with every request we might want to handle.
 
 ```javascript
 var actions = {
@@ -53,7 +53,7 @@ var handleRequest = function (request, response) {
   if (action) {
     action(request, response);
   } else {
-    helpers.sendResponse(response, 'something went wrong', 404);
+    sendResponse(response, 'something went wrong', 404);
   }
 };
 ```
@@ -65,15 +65,15 @@ This pattern can also be applied to creating routers for a variety of URL paths 
 ```javascript
 var routes = {
   '/': //a function,
-  '/users': //a differenct function,
+  '/users': //a different function,
   '/favorites': //a third function
 }
 ```
 
-Once we have defined our routes in an object, it's as simple as calling up `routes[request.method]` to direct traffic to the appropriate place.  In practice, this might look something like the following:
+Once we have defined our routes in an object, it's as simple as calling up `routes[request.url]` to direct traffic to the appropriate place.  In practice, this might look something like the following:
 
 ```javascript
-var route = routes[request.method];
+var route = routes[request.url];
 if (route){
   route(request, response);
 } else {
