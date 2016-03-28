@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Exploring Routing in Node.js"
-date:   2016-03-23 13:53:14 -0500
+date:   2016-03-25 13:53:14 -0500
 categories: JavaScript
 excerpt: "Too many conditional statements?  Node server getting out of hand?  Objects may be the answer..."
 sidebar: javaScript
