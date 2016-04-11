@@ -7,7 +7,7 @@ excerpt: "Too many conditional statements?  Node server getting out of hand?  Ob
 sidebar: javaScript
 ---
 
-One of the largest challenges I've faced in implimenting modular code as I design basic servers in Node is avoiding writing sprawling and messy conditional statements. As an easier to maintain and harder to break alternative, JavaScript's native object pattern is a great way to store information.  Pieces of data (in this case, function calls) can be organized by easily understood keys and retrieved trivially when they are needed. 
+One of the largest challenges I've faced in implementing modular code as I design basic servers in Node is avoiding writing sprawling and messy conditional statements. As an easier to maintain and harder to break alternative, JavaScript's native object pattern is a great way to store information.  Pieces of data (in this case, function calls) can be organized by easily understood keys and retrieved trivially when they are needed. 
 
 The first place this pattern pops up in designing a Node server is for handling the various HTTP requests that might arise.  Sure, you could write something like this:
 

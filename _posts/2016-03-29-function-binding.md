@@ -3,11 +3,11 @@ layout: post
 title:  "Binding and Currying Functions with Javascript"
 date:   2016-03-29 22:55:14 -0500
 categories: JavaScript
-excerpt: "The function `bind` is a standard part of the JavaScript repertoire, so understanding how it works and being able to re-impliment it in a pinch is a good trick for a developer to have up his or her sleeve.  In this post, I'll explore basic context binding as well as supplying extra arguments to the bound function at various points along the way."
+excerpt: "The function `bind` is a standard part of the JavaScript repertoire, so understanding how it works and being able to re-implement it in a pinch is a good trick for a developer to have up his or her sleeve.  In this post, I'll explore basic context binding as well as supplying extra arguments to the bound function at various points along the way."
 sidebar: javaScript
 ---
 
-The function `bind` is a standard part of the JavaScript repertoire, so understanding how it works and being able to re-impliment it in a pinch is a good trick for a developer to have up his or her sleeve.  In this post, I'll explore basic context binding as well as supplying extra arguments to the bound function at various points along the way.
+The function `bind` is a standard part of the JavaScript repertoire, so understanding how it works and being able to re-implement it in a pinch is a good trick for a developer to have up his or her sleeve.  In this post, I'll explore basic context binding as well as supplying extra arguments to the bound function at various points along the way.
 
 The typical completely unrealistic use case looks something like the following:
 
